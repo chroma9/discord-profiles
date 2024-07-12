@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Discord Profile HTML Generator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./assets/css/discord-profile-maker.min.css">
+<link rel="stylesheet" href="./assets/css/discord-profile.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-charcoal text-light text-center">
+<div class="container-fluid row no-gutters">
+    <div class="col-md-12 bg-blurple">
+        <h1 class="font-brand m-4">Discord Profile HTML Generator</h1>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Discord Colors</div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Primary Color</span>
+            <input id="input__cprimary" type="color" class="form-control form-control-color">
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Secondary Color</span>
+            <input id="input__csecondary" type="color" class="form-control form-control-color">
+        </div>
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Banner & Avatar</div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Banner Link</span>
+            <input id="input__banner-image" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Avatar Link</span>
+            <input id="input__avatar-image" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Personal Information</div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Display Name</span>
+            <input id="input__display-name" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Username</span>
+            <input id="input__username" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Pronouns</span>
+            <input id="input__pronouns" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Discord Bio</span>
+            <textarea id="input__bio" type="text" class="form-control"></textarea>
+        </div>
+        <div class="input-group mb-3 mt-3 bg-dark">
+            <span class="input-group-text">Member Since</span>
+            <input id="input__member-since" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Discord Badges</div>
+        <div class="row">
+            <div class="col-4">
+                <input id="badge__discord-staff" class="form-check-input" type="checkbox">
+                <span>Discord Staff</span>
+            </div> 
+            <div class="col-4">
+                <input id="badge__partnered-server-owner" class="form-check-input" type="checkbox">
+                <span>Partnered Server Owner</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__moderator-programs-alumni" class="form-check-input" type="checkbox">
+                <span>Moderator Programs Alumni</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__hypesquad-events" class="form-check-input" type="checkbox">
+                <span>HypeSquad Events</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__hypesquad-bravery" class="form-check-input" type="checkbox">
+                <span>HypeSquad Bravery</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__hypesquad-brilliance" class="form-check-input" type="checkbox">
+                <span>HypeSquad Brilliance</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__hypesquad-balance" class="form-check-input" type="checkbox">
+                <span>HypeSquad Balance</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__bug-hunter-gold" class="form-check-input" type="checkbox">
+                <span>Bug Hunter (Gold)</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__bug-hunter" class="form-check-input" type="checkbox">
+                <span>Bug Hunter</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__active-developer" class="form-check-input" type="checkbox">
+                <span>Active Developer</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__early-verified-bot-developer" class="form-check-input" type="checkbox">
+                <span>Early Verified Bot Developer</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__server-booster" class="form-check-input" type="checkbox">
+                <select id="badge__server-booster-months" class="bg-charcoal text-light border-0">
+                    <option value="1" selected>Server Booster 1 Month</option>
+                    <option value="2">Server Booster 2 Months</option>
+                    <option value="3">Server Booster 3 Months</option>
+                    <option value="6">Server Booster 6 Months</option>
+                    <option value="9">Server Booster 9 Months</option>
+                    <option value="12">Server Booster 1 Year</option>
+                    <option value="15">Server Booster 15 Months</option>
+                    <option value="18">Server Booster 18 Months</option>
+                    <option value="24">Server Booster 2 Years</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <input id="badge__early-supporter" class="form-check-input" type="checkbox">
+                <span>Early Supporter</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__discord-nitro" class="form-check-input" type="checkbox">
+                <span>Discord Nitro</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__originally-known-as" class="form-check-input" type="checkbox">
+                <span>Originally known as</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__completed-a-quest" class="form-check-input" type="checkbox">
+                <span>Completed a Quest</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__supports-commands" class="form-check-input" type="checkbox">
+                <span>Supports Commands</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__uses-automod" class="form-check-input" type="checkbox">
+                <span>Uses Automod</span>
+            </div>
+            <div class="col-4">
+                <input id="badge__server-has-premium" class="form-check-input" type="checkbox">
+                <span>This Server has Premium</span>
+            </div>
+        </div>
+        <button id="generate" class="btn btn-primary mb-3 mt-3 w-100">Generate Profile</button>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Profile Preview</div>
+        <div id="dprofile__region" class="mb-3 mt-3">
+            <div class="dprofile dprofile__theme__dark" style="--profile-gradient-primary:#aa0;--profile-gradient-secondary:#00b">
+                <div class="dprofile__overlay">
+                    <svg class="dprofile__banner-wrapper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 120">
+                        <mask id="dprofile__banner-mask-id">
+                            <rect fill="white" x="0" y="0" width="100%" height="100%"></rect>
+                            <circle fill="black" cx="58" cy="112" r="46"></circle>
+                        </mask>
+                        <foreignObject mask="url(#dprofile__banner-mask-id)" width="100%" height="100%">
+                            <div class="dprofile__banner-image" draggable="false"></div>
+                        </foreignObject>
+                    </svg>
+                    <div class="dprofile__avatar-image" draggable="false"></div>
+                    <div class="dprofile__main">
+                        <div class="dprofile__display-name">Your Display name</div>
+                        <div class="dprofile__account-area">
+                            <div class="dprofile__username">yourusername</div>
+                            <div class="dprofile__dot-spacer"> • </div>
+                            <div class="dprofile__pronouns">They/Them</div>
+                            <div class="dprofile__badges"></div>
+                        </div>
+                        <div class="dprofile__content">
+                            <div class="dprofile__section">
+                                <div class="dprofile__section__title">About Me</div>
+                                <div class="dprofile__bio dprofile__section__content">Web Developer</div>
+                            </div>
+                            <br>
+                            <div class="dprofile__section">
+                                <div class="dprofile__section__title">Member Since</div>
+                                <div class="dprofile__member-since dprofile__section__content">Jan 1, 1970</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-group mb-3 mt-3 w-100 font-brand">Code Output</div>
+        <pre id="code-output" class="mb-3 mt-3 text-start bg-dark text-light rounded border"></pre>
+    </div>
+</div>
+</body>
+<script src="./assets/js/discord-profile-maker.js"></script>

@@ -1,0 +1,49 @@
+@font-face {font-family:'gg sans';font-weight:400;font-style:normal;src:url(../fonts/gg-sans-normal-400.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:500;font-style:normal;src:url(../fonts/gg-sans-normal-500.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:600;font-style:normal;src:url(../fonts/gg-sans-normal-600.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:700;font-style:normal;src:url(../fonts/gg-sans-normal-700.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:800;font-style:normal;src:url(../fonts/gg-sans-normal-800.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:400;font-style:italic;src:url(../fonts/gg-sans-italic-400.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:500;font-style:italic;src:url(../fonts/gg-sans-italic-500.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:600;font-style:italic;src:url(../fonts/gg-sans-italic-600.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:700;font-style:italic;src:url(../fonts/gg-sans-italic-700.woff2) format('woff2');}
+@font-face {font-family:'gg sans';font-weight:800;font-style:italic;src:url(../fonts/gg-sans-italic-800.woff2) format('woff2');}
+.dprofile__theme__dark {
+    --body-color: rgba(0, 0, 0, 0.45);
+    --header-primary: rgba(242, 243, 245, 1);
+    --header-secondary: rgba(242, 243, 245, 1);
+    --header-overlay: rgba(0, 0, 0, 0.6);
+    --text-normal: rgba(219, 222, 225, 1);
+    --profile-divider: rgba(255, 255, 255, 0.24);
+    --accent: rgba(0, 176, 244, 1);
+}
+.dprofile__theme__light {
+    --body-color: rgba(255, 255, 255, 0.45);
+    --header-primary: rgba(6, 6, 7, 1);
+    --header-secondary: rgba(78, 80, 88, 1);
+    --header-overlay: rgba(255, 255, 255, 0.6);
+    --text-normal: rgba(49, 51, 56, 1);
+    --profile-divider: rgba(105, 21, 34, 0.12);
+    --accent: rgba(0, 176, 244, 1);
+}
+.dprofile {padding:4px;width:340px;position:relative;border-radius:8px;background-image: linear-gradient(var(--profile-gradient-primary),var(--profile-gradient-primary) 120px,var(--profile-gradient-secondary));overflow:hidden;font-family:'gg sans',sans-serif;display:flex;flex-direction:column;}
+.dprofile * {text-align:start;}
+.dprofile__main {padding:12px 16px 16px;margin:24px 0 0;display:flex;flex-direction:column;}
+.dprofile__overlay {background-color:var(--header-overlay);}
+.dprofile__content {background-color:var(--body-color);border-radius:8px;padding:12px;margin-top:16px;}
+.dprofile__display-name {font-size:20px;line-height:24px;font-weight:600;color:var(--header-primary);}
+.dprofile__account-area {display:flex;flex-wrap:wrap;align-items:center;width:100%;}
+.dprofile__username {text-transform:lowercase;font-size:14px;font-weight:500;color:var(--header-primary);}
+.dprofile__pronouns {font-size:14px;font-weight:500;color:var(--header-primary);}
+.dprofile__divider {background-color:var(--profile-divider);height:1px;margin:12px 0 0;}
+.dprofile__dot-spacer {user-select:none;margin:0 4px 0 4px;color:var(--header-primary);}
+.dprofile__section__title {font-weight:700;font-size:12px;margin:0 0 6px;color:var(--header-primary);}
+.dprofile__section__content {font-size:14px;font-weight:400;color:var(--text-normal);}
+.dprofile__bio {white-space:pre;}
+.dprofile__bio a {color:var(--accent);}
+.dprofile__bio a:hover {text-decoration:underline;}
+.dprofile__banner-image {background-image:var(--profile-banner-link);background-size:100%;height:100%;user-select:none;}
+.dprofile__avatar-image {background-image:var(--profile-avatar-link);background-size:100%;border-radius:100%;position:absolute;width:80px;height:80px;top:74px;left:20px;user-select:none;}
+.dprofile__badges {padding:1px;display:flex;flex-wrap:wrap;gap:2px;align-self:end;background-color:var(--body-color);border:1px solid var(--profile-divider);border-radius:8px;max-width:190px;margin:1px 4px;}
+.dprofile__badges a {text-decoration:none;}
+.dprofile__badge {width:20px;height:20px;user-select:none;}

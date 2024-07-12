@@ -1,0 +1,21 @@
+@font-face {font-family:'Ginto Nord';src:url(../fonts/ginto-nord-black.woff) format('woff');}
+input, textarea, span {background-color:#2C2F33 !important;color:#ffffff !important;}
+pre {white-space:pre-wrap;}
+.font-brand {font-family:'Ginto Nord',sans-serif;}
+.font-main {font-family:'gg sans',sans-serif;}
+.bg-blurple {background-color:#5865F2;}
+.bg-green {background-color:#57F287;}
+.bg-yellow {background-color:#FEE75C;}
+.bg-fuschia {background-color:#EB459E;}
+.bg-red {background-color:#ED4245;}
+.bg-white {background-color:#ffffff;}
+.bg-black {background-color:#000000;}
+.bg-charcoal {background-color:#2C2F33;}
+.text-blurple {color:#5865F2;}
+.text-green {color:#57F287;}
+.text-yellow {color:#FEE75C;}
+.text-fuschia {color:#EB459E;}
+.text-red {color:#ED4245;}
+.text-white {color:#ffffff;}
+.text-black {color:#000000;}
+.text-charcoal {color:#2C2F33;}
