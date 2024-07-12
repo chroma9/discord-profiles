@@ -1,4 +1,4 @@
-let x = window.location.origin;
+let x = window.location.href;
 
 function generateResults() {
     // Display Name Preview
